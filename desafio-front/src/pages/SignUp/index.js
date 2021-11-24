@@ -1,26 +1,38 @@
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 import { Container } from './styles';
 import { InputRow, InputGroup } from '../../global/styles';
 
-import { signInRequest } from '../../store/modules/auth/actions';
+import { signUpRequest } from '../../store/modules/auth/actions';
 
 
-export default function SignIn() {
+export default function SignUp() {
   const [user, setUser] = useState();
+  const [name, setName] = useState();
   const [password, setPassword] = useState();
   const dispatch = useDispatch();
-  const loading = useSelector(state => state.auth.loading);
 
   function handleSubmit() {
-    dispatch(signInRequest(user, password));
+    dispatch(signUpRequest(user, name, password));
   }
 
   return (
     <Container>
       <form>
+        <InputRow>
+          <InputGroup>
+            <strong>NAME</strong>
+            <input 
+              name="name" 
+              type="text" 
+              placeholder="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </InputGroup>
+        </InputRow>
         <InputRow>
           <InputGroup>
             <strong>USER</strong>
@@ -48,9 +60,9 @@ export default function SignIn() {
         </InputRow>
 
         <button type="button" onClick={handleSubmit}>
-          {loading ? 'Loading...' : 'Login'}
+          Sign UP
         </button>
-        <Link to="/sign">Create account</Link>
+        <Link to="/">Back to login</Link>
       </form>
     </Container>
   );

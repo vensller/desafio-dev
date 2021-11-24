@@ -25,29 +25,11 @@ export const Header = styled.div`
   div {
     width: 350px;
     display: flex;
-    flex-direction: row;
-    background: #fff;
+    flex-direction: column;
     border-radius: 4px;
     align-content: center;
     align-items: center;
-
-    svg {
-      margin-left: 5px;
-    }
-
-    input {
-      border: 0;
-      height: 32px;
-      width: 300px;
-      background: none;
-      padding: 0 5px;
-      color: #666;
-      max-width: 90%;
-
-      &::placeholder {
-        color: #999;
-      }
-    }
+    font-size: 20px;
   }
 
   button {
@@ -55,6 +37,28 @@ export const Header = styled.div`
 
     @media (max-width: 680px) {
       margin-left: 0px;
+    }
+  }
+
+  select {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    height: 44px;
+    padding: 0 15px;
+    margin-top: 10px;
+    color: #666;
+    max-width: 100%;
+    font-size: 14px;
+
+    &::placeholder {
+      color: #999;
+    }
+
+    option {
+      border: 1px solid #eee;
+      border-radius: 4px;
+      color: #666;
     }
   }
 `;

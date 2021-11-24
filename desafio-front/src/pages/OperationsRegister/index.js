@@ -15,13 +15,19 @@ import history from '../../services/history';
 
 export default function OperationsRegister() {
   const [file, setFile] = useState();
+  const [fileName, setFileName] = useState();
+
+  function handleChangeFile(file) {
+    setFile(file);
+    setFileName(file?.name);
+  }
 
   async function handleSubmit() {
     try {
       const formData = new FormData();
       formData.append('file', file);
 
-      await api.put(`/files`, formData);
+      await api.post(`/files`, formData);
 
       toast.success('Archive imported!');
       history.push('/operations');
@@ -58,7 +64,8 @@ export default function OperationsRegister() {
         </Header>
         <InputContainer>
           <FileInput
-            onChange={file => setFile(file)}            
+            onChange={handleChangeFile}       
+            fileName={fileName}     
           />         
           
         </InputContainer>

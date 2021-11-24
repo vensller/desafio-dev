@@ -11,5 +11,4 @@ export const Container = styled.div`
     align-self: center;
     margin-top: 50px;
   }
-
 `;

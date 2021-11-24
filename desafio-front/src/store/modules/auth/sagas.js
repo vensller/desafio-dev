@@ -37,7 +37,7 @@ export function* signUp({ payload }) {
       user,
       password
     });
-
+    toast.success('Account created');
     history.push('/');
   } catch (error) {
     toast.error('Unable to register');

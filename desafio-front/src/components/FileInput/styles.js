@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   align-self: center;
-  margin-bottom: 30px;
   text-align: center;
 
   label {
@@ -22,6 +21,12 @@ export const Container = styled.div`
 
     input {
       display: none;
+    }
+
+    p {
+      padding: 10px;
+      background: #eee;
+      font-size: 16px;
     }
   }
 `;

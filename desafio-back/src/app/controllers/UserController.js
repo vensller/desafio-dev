@@ -3,17 +3,13 @@ import * as Yup from 'yup';
 import User from '../models/User';
 
 class UserController {
-  async store(req, res) {
-    try {
-      
- 
+  async store(req, res) {      
     const schema = Yup.object().shape({
       name: Yup.string().required(),
       user: Yup.string()
         .required(),
       password: Yup.string()
-        .required()
-        .min(6),
+        .required(),
     });
 
     if (!(await schema.isValid(req.body))) {
@@ -33,9 +29,6 @@ class UserController {
       name,
       user,
     });
-  } catch (error) {
-   console.log(error)   
-  }
   }
 
   async update(req, res) {

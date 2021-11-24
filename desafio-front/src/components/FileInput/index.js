@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { Container } from './styles';
 
-export default function FileInput({ onChange }) {
+export default function FileInput({ fileName, onChange }) {
   const ref = useRef();
 
   async function handleChange(e) {
@@ -13,6 +13,7 @@ export default function FileInput({ onChange }) {
   return (
     <Container>
       <label htmlFor="file">
+        <p>{fileName || "Select file"}</p>
         <input
           type="file"
           id="file"
@@ -27,5 +28,6 @@ export default function FileInput({ onChange }) {
 
 FileInput.propTypes = {
   onChange: PropTypes.func.isRequired,
+  fileName: PropTypes.string,
 };
 
