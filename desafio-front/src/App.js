@@ -4,8 +4,6 @@ import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
 import { Router } from 'react-router-dom';
 
-import './Config/ReactotronConfig';
-
 import GlobalStyles from './global/styles';
 
 import { store, persistor } from './store';

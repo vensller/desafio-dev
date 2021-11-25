@@ -24,7 +24,6 @@ export function* signIn({ payload }) {
     history.push('/operations');
   } catch (error) {
     toast.error('Unable to authenticate');
-    console.tron.log(error);
     yield put(signFailure());
   }
 }

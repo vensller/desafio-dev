@@ -1492,7 +1492,7 @@
   dependencies:
     "@redux-saga/symbols" "^1.1.2"
 
-"@redux-saga/is@^1.0.1", "@redux-saga/is@^1.1.2":
+"@redux-saga/is@^1.1.2":
   "integrity" "sha512-OLbunKVsCVNTKEf2cH4TYyNbbPgvmZ52iaxBD4I1fTif4+MTXMa4/Z07L83zW/hTCXwpSZvXogqMqLfex2Tg6w=="
   "resolved" "https://registry.npmjs.org/@redux-saga/is/-/is-1.1.2.tgz"
   "version" "1.1.2"
@@ -4447,13 +4447,6 @@
   "version" "1.3.2"
   dependencies:
     "is-arrayish" "^0.2.1"
-
-"error-stack-parser@^2.0.4":
-  "integrity" "sha512-d51brTeqC+BHlwF0BhPtcYgF5nlzf9ZZ0ZIUQNZpc9ZB9qw5IJ2diTrBY9jlCJkTLITYPjmiX6OWCwH+fuyNgQ=="
-  "resolved" "https://registry.npmjs.org/error-stack-parser/-/error-stack-parser-2.0.6.tgz"
-  "version" "2.0.6"
-  dependencies:
-    "stackframe" "^1.1.1"
 
 "es-abstract@^1.19.0", "es-abstract@^1.19.1":
   "integrity" "sha512-2vJ6tjA/UfqLm2MPs7jxVybLoB8i1t1Jd9R3kISld20sIxPcTbLuggQOUxeWeAvIUkduv/CfMjuh4WmiXr2v9w=="
@@ -9562,34 +9555,6 @@
     "object-assign" "^4.1.1"
     "prop-types" "^15.6.2"
 
-"reactotron-core-client@^2.5.0":
-  "integrity" "sha512-SYRO4OCutJzfWMnaULUGVyETZnMDCU5ECNflXyM3Z5Gnfxp/wV6d7jYonhfxHdpU/aGb4Eg15C22myOCXSu6HQ=="
-  "resolved" "https://registry.npmjs.org/reactotron-core-client/-/reactotron-core-client-2.8.10.tgz"
-  "version" "2.8.10"
-
-"reactotron-core-client@2.8.9":
-  "integrity" "sha512-IAfNEst/VrWC4b5kOWkHLV0xCwM5n3Pd8q59ueotg1Tql81HnhCeHW1/lCPaaNh2B3/Eh3rAXuiM3yYWvdU36g=="
-  "resolved" "https://registry.npmjs.org/reactotron-core-client/-/reactotron-core-client-2.8.9.tgz"
-  "version" "2.8.9"
-
-"reactotron-react-js@^3.3.7":
-  "integrity" "sha512-wWC2P2A2OhtUMN0L4vIphaPZXcC2HRwotNljCipEyzHDzTwvRmgsb5ZNKQjmAWGPZlqlb8EEAJA1L9A7HB8B2A=="
-  "resolved" "https://registry.npmjs.org/reactotron-react-js/-/reactotron-react-js-3.3.7.tgz"
-  "version" "3.3.7"
-  dependencies:
-    "reactotron-core-client" "2.8.9"
-    "stacktrace-js" "2.0.1"
-
-"reactotron-redux-saga@^4.2.3":
-  "integrity" "sha512-Vo/zjwYyd93nT4h4SJkvhE5WIBk7AnZg5NPM0NF3auwPEz78ZR2xnnyCt2JPYFSvyy6ykNpS7vA7FeREgFkNCQ=="
-  "resolved" "https://registry.npmjs.org/reactotron-redux-saga/-/reactotron-redux-saga-4.2.3.tgz"
-  "version" "4.2.3"
-
-"reactotron-redux@^3.1.3":
-  "integrity" "sha512-8QVEbr2R4GtFlXwSe0uK5bkuz3xRWZx8Nwi2g9e6cRbpkesTfycWVK5Oyn+wR9XOTt894WSn8CAH2TB6dVuDyg=="
-  "resolved" "https://registry.npmjs.org/reactotron-redux/-/reactotron-redux-3.1.3.tgz"
-  "version" "3.1.3"
-
 "read-pkg-up@^2.0.0":
   "integrity" "sha1-a3KoBImE4MQeeVEP1en6mbO1Sb4="
   "resolved" "https://registry.npmjs.org/read-pkg-up/-/read-pkg-up-2.0.0.tgz"
@@ -9698,14 +9663,14 @@
   "resolved" "https://registry.npmjs.org/redux-persist/-/redux-persist-6.0.0.tgz"
   "version" "6.0.0"
 
-"redux-saga@^1.0.1", "redux-saga@^1.1.3":
+"redux-saga@^1.1.3":
   "integrity" "sha512-RkSn/z0mwaSa5/xH/hQLo8gNf4tlvT18qXDNvedihLcfzh+jMchDgaariQoehCpgRltEm4zHKJyINEz6aqswTw=="
   "resolved" "https://registry.npmjs.org/redux-saga/-/redux-saga-1.1.3.tgz"
   "version" "1.1.3"
   dependencies:
     "@redux-saga/core" "^1.1.3"
 
-"redux@^4.0.0", "redux@^4.0.1", "redux@^4.0.4", "redux@^4.0.5", "redux@>4.0.0":
+"redux@^4.0.0", "redux@^4.0.4", "redux@^4.0.5", "redux@>4.0.0":
   "integrity" "sha512-SH8PglcebESbd/shgf6mii6EIoRM0zrQyjcuQ+ojmfxjTtE0z9Y8pa62iA/OJ58qjP6j27uyW4kUF4jl/jd6sw=="
   "resolved" "https://registry.npmjs.org/redux/-/redux-4.1.2.tgz"
   "version" "4.1.2"
@@ -10478,11 +10443,6 @@
   "resolved" "https://registry.npmjs.org/source-map/-/source-map-0.6.1.tgz"
   "version" "0.6.1"
 
-"source-map@0.5.6":
-  "integrity" "sha1-dc449SvwczxafwwRjYEzSiu19BI="
-  "resolved" "https://registry.npmjs.org/source-map/-/source-map-0.5.6.tgz"
-  "version" "0.5.6"
-
 "spdx-correct@^3.0.0":
   "integrity" "sha512-cOYcUWwhCuHCXi49RhFRCyJEK3iPj1Ziz9DpViV3tbZOwXD49QzIN3MpOLJNxh2qwq2lJJZaKMVw9qNi4jTC0w=="
   "resolved" "https://registry.npmjs.org/spdx-correct/-/spdx-correct-3.1.1.tgz"
@@ -10579,41 +10539,12 @@
   "resolved" "https://registry.npmjs.org/stable/-/stable-0.1.8.tgz"
   "version" "0.1.8"
 
-"stack-generator@^2.0.4":
-  "integrity" "sha512-/t1ebrbHkrLrDuNMdeAcsvynWgoH/i4o8EGGfX7dEYDoTXOYVAkEpFdtshlvabzc6JlJ8Kf9YdFEoz7JkzGN9Q=="
-  "resolved" "https://registry.npmjs.org/stack-generator/-/stack-generator-2.0.5.tgz"
-  "version" "2.0.5"
-  dependencies:
-    "stackframe" "^1.1.1"
-
 "stack-utils@^1.0.1":
   "integrity" "sha512-KZiTzuV3CnSnSvgMRrARVCj+Ht7rMbauGDK0LdVFRGyenwdylpajAp4Q0i6SX8rEmbTpMMf6ryq2gb8pPq2WgQ=="
   "resolved" "https://registry.npmjs.org/stack-utils/-/stack-utils-1.0.5.tgz"
   "version" "1.0.5"
   dependencies:
     "escape-string-regexp" "^2.0.0"
-
-"stackframe@^1.1.1":
-  "integrity" "sha512-GrdeshiRmS1YLMYgzF16olf2jJ/IzxXY9lhKOskuVziubpTYcYqyOwYeJKzQkwy7uN0fYSsbsC4RQaXf9LCrYA=="
-  "resolved" "https://registry.npmjs.org/stackframe/-/stackframe-1.2.0.tgz"
-  "version" "1.2.0"
-
-"stacktrace-gps@^3.0.3":
-  "integrity" "sha512-qIr8x41yZVSldqdqe6jciXEaSCKw1U8XTXpjDuy0ki/apyTn/r3w9hDAAQOhZdxvsC93H+WwwEu5cq5VemzYeg=="
-  "resolved" "https://registry.npmjs.org/stacktrace-gps/-/stacktrace-gps-3.0.4.tgz"
-  "version" "3.0.4"
-  dependencies:
-    "source-map" "0.5.6"
-    "stackframe" "^1.1.1"
-
-"stacktrace-js@2.0.1":
-  "integrity" "sha512-13oDNgBSeWtdGa4/2BycNyKqe+VktCoJ8VLx4pDoJkwGGJVtiHdfMOAj3aW9xTi8oR2v34z9IcvfCvT6XNdNAw=="
-  "resolved" "https://registry.npmjs.org/stacktrace-js/-/stacktrace-js-2.0.1.tgz"
-  "version" "2.0.1"
-  dependencies:
-    "error-stack-parser" "^2.0.4"
-    "stack-generator" "^2.0.4"
-    "stacktrace-gps" "^3.0.3"
 
 "static-extend@^0.1.1":
   "integrity" "sha1-YICcOcv/VTNyJv1eC1IPNB8ftcY="

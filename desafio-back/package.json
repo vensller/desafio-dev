@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon src/server.js",
-    "dev:debug": "nodemon --inspect src/server.js",
-    "queue": "nodemon src/queue.js"
+    "prod": "npx sequelize db:migrate && node src/server.js",
+    "dev:debug": "nodemon --inspect src/server.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
@@ -24,6 +24,7 @@
     "pg": "^8.7.1",
     "pg-hstore": "^2.3.3",
     "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.3.0",
     "yup": "^0.28.1"
   },
   "devDependencies": {
